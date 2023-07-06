@@ -3,22 +3,22 @@ package day01.practice;
 public class Cat {
 
 	// Attributes
-    private boolean hasDots;
+    private int age;
     private String color;
 
     // Constructor
-    public Cat(boolean hasDots, String color) {
-        this.hasDots = hasDots;
+    public Cat(int age, String color) {
+        this.age = age;
         this.color = color;
     }
 
     // Getters and setters
-    public boolean hasDots() {
-        return hasDots;
+    public int hasDots() {
+        return age;
     }
 
-    public void setHasDots(boolean hasDots) {
-        this.hasDots = hasDots;
+    public void setHasDots(int age) {
+        this.age = age;
     }
 
     public String getColor() {
@@ -30,24 +30,24 @@ public class Cat {
     }
 
 	public String speak() {
-    return "Woof!";
+    return "Meow!";
     }
 
-    // Main method to create Dog objects
+    // Main method to create Cat objects
     public static void main(String[] args) {
         // Create two Dog objects
-        Cat dog1 = new Cat(true, "purple");
-        Cat dog2 = new Cat(true, "blue");
+        Cat cat1 = new Cat(4, "White");
+        Cat cat2 = new Cat(3, "Black");
 
-        // Print the attributes of each Dog
-        System.out.println("Dog 1:");
-        System.out.println("Has Dots: " + dog1.hasDots());
-        System.out.println("Color: " + dog1.getColor());
-		System.out.println("Speaks: " + dog1.speak());
+        // Print the attributes of each Cat
+        System.out.println("Cat 1:");
+        System.out.println("Age: " + cat1.hasDots());
+        System.out.println("Color: " + cat1.getColor());
+		System.out.println("Speaks: " + cat1.speak());
 
-        System.out.println("Dog 2:");
-        System.out.println("Has Dots: " + dog2.hasDots());
-        System.out.println("Color: " + dog2.getColor());
-		System.out.println("Speaks: " + dog1.speak());
+        System.out.println("Cat 2:");
+        System.out.println("Has Dots: " + cat2.hasDots());
+        System.out.println("Color: " + cat2.getColor());
+		System.out.println("Speaks: " + cat2.speak());
     }
 }
