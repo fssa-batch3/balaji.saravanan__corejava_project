@@ -32,6 +32,13 @@ public class Cat {
 	public String speak() {
     return "Meow!";
     }
+	
+	  private static void validateAge(int age) {
+	        if (age <0) {
+	        	
+	            throw new IllegalArgumentException("Cat age is minimum value requried :");
+	        }
+	    }
 
     // Main method to create Cat objects
     public static void main(String[] args) {
