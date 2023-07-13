@@ -11,7 +11,7 @@ public class LinkedList1 {
             data = d;
             next = null;
         }
-    }
+    } 
 
     public static LinkedList1 insert(LinkedList1 list, int data) {
         // Create a new node with the given data
@@ -69,5 +69,11 @@ public class LinkedList1 {
 
         // Print the LinkedList
         printList(list);
+        
+        int[][] a= new int[3][2];
+        
+        a[0][1]=(int) 7l;
+        
+        
     }
 }
