@@ -39,7 +39,7 @@ class Student {
 		this.department.printdepartmentDetails();
 	}
 
-}
+} 
 
 public class DepartmentDemo {
 	public static void main(String[] args) {

@@ -4,7 +4,7 @@ public class AxisATM implements ATM{
 	
 	protected final double charge=5;
 	
-
+ 
 	@Override
 	public boolean deposit(Account account, double amount) {
 		

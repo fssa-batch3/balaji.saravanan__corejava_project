@@ -8,7 +8,7 @@ class Account  {
 	public String getAccNo() {
 		
 		return accNo;
-	}
+	}   
 	public void setAccNo(String accNo) {
 		
 		this.accNo = accNo;
