@@ -14,24 +14,24 @@ public class FindTaskTest {
 	@BeforeEach     //.@BeforeEach சிறுகுறிப்பு ஒரு சோதனை வகுப்பில் ஒவ்வொரு சோதனை 
 	                 //முறைக்கும் முன் ஒரு முறை செயல்படுத்தப்பட வேண்டும் என்பதைக் குறிக்கப் 
 	                  //பயன்படுத்தப்படுகிறது.
-	public void setup() {
-		tasksList = new ArrayList<>();
+	public void setup() { 
+		tasksList = new ArrayList<>(); 
 		tasksList.add(new Task("walk", 5533));
 		tasksList.add(new Task("swim", 5533));
 		tasksList.add(new Task("write", 5533));
 		tasksList.add(new Task("read", 5533));
 	}
 
-	@Test
+	@Test 
 	public void testFindTaskByName() {
 		boolean result = FindTask.findTaskByName("swim", tasksList);
 		Assertions.assertTrue(result);
-	}
+	} 
 
 	@Test
 	public void testFindTaskNotname() {
 		boolean result = FindTask.findTaskByName("jump", tasksList);
-		Assertions.assertFalse(result);
+		Assertions.assertFalse(result); 
 	}
 
 	@Test

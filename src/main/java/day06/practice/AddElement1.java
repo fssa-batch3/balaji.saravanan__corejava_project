@@ -11,9 +11,9 @@ public class AddElement1 {
 
 		System.out.println(ListChecking.cityList2(city));
 
-	}
+	} 
 }
-
+ 
 class ListChecking {
 
 	public static List<String> cityList() {

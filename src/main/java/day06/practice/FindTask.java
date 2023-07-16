@@ -20,7 +20,7 @@ public class FindTask {
 		}
 
 		return false;
-	}
+	} 
 
 	public static void main(String[] args) {
 		
@@ -32,5 +32,5 @@ public class FindTask {
 		tasksList.add(new Task("read", 5533));
 
 		FindTask.findTaskByName("swim", tasksList);
-	}
+	} 
 }

@@ -10,9 +10,9 @@ public class Task {
 	
 	public Task(String taskName, int priority) {
 		
-		this.taskName= taskName;
+		this.taskName= taskName; 
 		
 		this.priority= priority;
-	}
+	}  
 
 }

@@ -13,13 +13,13 @@ public class ListCheckingTest {
 	        List<String> cityList = new ArrayList<>();
 	        cityList.add("Chennai");
 	        cityList.add("Bangalore");
-	        cityList.add("Mumbai");
-	        cityList.add("Mumbai");
+	        cityList.add("Mumbai"); 
+	        cityList.add("Mumbai"); 
 	        
 	        List<String> result = ListChecking.cityList();
 
 	        Assertions.assertEquals(cityList, result);
-	 }
+	 } 
 
     @Test
     public void testCityList2() { 
@@ -28,7 +28,7 @@ public class ListCheckingTest {
         cityList.add("Bangalore");
         cityList.add("Mumbai");
         cityList.add("Mumbai");
-
+ 
         List<String> expected = new ArrayList<>();
         expected.add("Chennai");
         expected.add("Bangalore");
