@@ -1,6 +1,7 @@
 package day07.practice;
 
 import java.util.HashSet;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -18,3 +19,4 @@ public class DuplicatesTest1 {
         Assertions.assertEquals(expected, actual);
     }
 }
+ 
