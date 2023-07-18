@@ -6,12 +6,12 @@ import java.util.HashMap;
 public class HashMap2 {
 	public static void main(String[] args) {
 
-		String[] arrr = { "HR,Ram", "HR, Suresh", "IT, Basker", "IT, Joseph" };
+		String[] arrr = { "HR,Ram", "HR, Suresh", "IT, Basker", "IT, Joseph" , "Admin, balaji"};
 		
 		HashMap2.department(arrr);
 
 		
-	}
+	} 
 	 
 	public static HashMap<String, ArrayList<String>> department(String[] arrr){
 		
@@ -54,14 +54,16 @@ public class HashMap2 {
 			
 			count--;
 		}
-		
-		System.out.println(countMap.keySet());
 
 		for (String n : countMap.keySet()) {
+			
+			System.out.println(countMap.values());
+			
 			System.out.println(n + " : " + countMap.get(n));
 		}
 		
-		
+
+		  
 		return countMap;
 	}
 
