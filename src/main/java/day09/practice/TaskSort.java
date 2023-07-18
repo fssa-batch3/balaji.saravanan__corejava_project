@@ -12,7 +12,7 @@ class Task implements Comparable<Task> {
 
 	public Task(int id, String name, String date) {
 
-		this.id = id;
+		this.id = id; 
 		this.name = name;
 
 		LocalDate deadli = LocalDate.parse(date);
@@ -45,6 +45,12 @@ public class TaskSort {
 
 	public static void main(String[] args) {
 
+		orderingTheObject();
+		   
+	}
+	
+	public static ArrayList<Task> orderingTheObject(){
+		
 		Task ta1 = new Task(3, "Coding", "2022-10-22");
 		Task ta2 = new Task(5, "Product Design", "2022-10-01");
 		Task ta3 = new Task(1, "Software Design", "2022-10-07");
@@ -63,7 +69,8 @@ public class TaskSort {
 			System.out.println(v.getId()+","+ v.getName()+","+ v.getDeadline());
 		}
 		
- 
+		return list;
+		
 	}
 
 }

@@ -10,7 +10,7 @@ public class OrderTheNumber {
 	    ArrayList<Integer> a= new ArrayList<>();
 	    a.add(8);
 	    a.add(9);
-	    a.add(45);//input 8 9 45 12 1
+	    a.add(45);    //input 8 9 45 12 1
 	    a.add(12);
 	    a.add(1);
 	    
@@ -18,7 +18,7 @@ public class OrderTheNumber {
 		
 		AsssendingOrder(a);
 
-	}
+	} 
 
 	public static ArrayList<Integer> AsssendingOrder(ArrayList<Integer> arr) {
 		
