@@ -9,7 +9,7 @@ public class HashMapDemo1 {
 		
 		HashMap<String, Integer> deptMap = new HashMap<String, Integer>();
 		
-		deptMap.put("HR", 5);
+		deptMap.put("HR", 5); 
 		deptMap.put("ADMIN", 10);
 		deptMap.put("DEVELOPERS", 300);
 

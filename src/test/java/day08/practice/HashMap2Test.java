@@ -13,7 +13,9 @@ public class HashMap2Test {
     public void testDepartment() {
      
         String[] arr = {"HR,Ram", "HR, Suresh", "IT, Basker", "IT, Joseph"};
+        
         HashMap<String, ArrayList<String>> expected = new HashMap<>();
+        
         expected.put("HR", new ArrayList<>(List.of("Ram", "Suresh")));
         expected.put("IT", new ArrayList<>(List.of("Basker", "Joseph")));
 
@@ -22,13 +24,15 @@ public class HashMap2Test {
 
    
         Assertions.assertEquals(expected, result);
-    }
+    } 
     
     @Test
     public void testDepartmentInvalid() {
   
         String[] arr = {"HR,Ram", "HR, Suresh", "IT, Basker", "IT, Joseph"};
+        
         HashMap<String, ArrayList<String>> expected = new HashMap<>();
+        
         expected.put("HR", new ArrayList<>(List.of("Ram", "Suresh", "Barath")));
         expected.put("IT", new ArrayList<>(List.of("Basker", "Joseph")));
 

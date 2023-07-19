@@ -12,7 +12,7 @@ public class NameCount {
 		
 		NameCount.NumberOfName(va);
 		
-	}
+	} 
 	
 	public static HashMap<String, Integer> NumberOfName(String[] names){
 		
@@ -23,7 +23,8 @@ public class NameCount {
 			if(value.get(names[i])==null) {
 				
 				value.put(names[i],1);	
-			}else {
+			}
+			else {
 				int count=value.get(names[i]);
 				count++;
 				value.put(names[i], count);

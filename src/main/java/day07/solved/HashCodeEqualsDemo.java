@@ -59,7 +59,7 @@ public class HashCodeEqualsDemo {
 		HashSet<Employee> setOfEmps = new HashSet<>();
 		setOfEmps.add(emp1);
 		setOfEmps.add(emp2);
-
+ 
 		for (Employee emp : setOfEmps) {
 			System.out.println(emp);
 		}

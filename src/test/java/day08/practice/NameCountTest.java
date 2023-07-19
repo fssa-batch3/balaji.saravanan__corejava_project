@@ -16,7 +16,7 @@ public class NameCountTest {
 		expected.put("Superman", 1);
 		expected.put("spider", 1);
 		expected.put("hey", 2);
-		expected.put("hello", 1);
+		expected.put("hello", 1); 
 		expected.put("Spider", 1);
 
 		

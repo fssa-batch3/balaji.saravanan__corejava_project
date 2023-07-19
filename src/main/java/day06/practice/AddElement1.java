@@ -3,7 +3,7 @@ package day06.practice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddElement1 {
+public class AddElement1 { 
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class AddElement1 {
 		System.out.println(ListChecking.cityList2(city));
 
 	} 
-}
+} 
  
 class ListChecking {
 

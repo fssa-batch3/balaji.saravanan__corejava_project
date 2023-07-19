@@ -22,7 +22,7 @@ public class OrderTheNumberTest {
 
 		
 		Assertions.assertNotNull(result);
-		
+		 
 		for (int num : result) {
 			
 			Assertions.assertTrue(num >= 0);

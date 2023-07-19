@@ -3,7 +3,7 @@ package day06.practice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindTask {
+public class FindTask { 
 	
 	public static boolean findTaskByName(String name, List<Task> tasks) {
 		
@@ -14,7 +14,9 @@ public class FindTask {
 		
 
 		for (Task value : tasks) {
+			
 			if (value.taskName.equals(name)) {
+				
 				return true;
 			}
 		}

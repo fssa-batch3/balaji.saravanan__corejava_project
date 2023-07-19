@@ -12,7 +12,7 @@ public class HashMap2 {
 
 		
 	} 
-	 
+	  
 	public static HashMap<String, ArrayList<String>> department(String[] arrr){
 		
 		int count = arrr.length - 1;

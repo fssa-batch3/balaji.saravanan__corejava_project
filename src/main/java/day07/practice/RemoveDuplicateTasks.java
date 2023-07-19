@@ -11,7 +11,7 @@ public class RemoveDuplicateTasks {
 		RemoveDuplicateTasks.UniqueList();
 	}
 
-	public static List UniqueList() {
+	public static List UniqueList() { 
 
 		List<Task1> task = new ArrayList<>();
 
@@ -23,6 +23,7 @@ public class RemoveDuplicateTasks {
 		task.add(new Task1(5536, "walk5", "2203-02-27"));
 
 		HashSet<Task1> taskUniqueSet = new HashSet<>(task);
+		
 		List<Task1> taskUniqueList = new ArrayList<>(taskUniqueSet);
 
 		for (Task1 v : taskUniqueList) {

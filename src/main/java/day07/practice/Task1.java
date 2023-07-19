@@ -12,31 +12,52 @@ public class Task1 {
 		this.name = name;
 		LocalDate date= LocalDate.parse(deadline);
 		
-		this.deadline = date; 
+		this.deadline = date;   
 	}
+
 
 	public int getId() {
 		return id;
 	}
 
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 	public String getName() {
 		return name;
 	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 
 	public LocalDate getDeadline() {
 		return deadline;
 	}
 
+
+	public void setDeadline(LocalDate deadline) {
+		this.deadline = deadline;
+	}
+
+
 	@Override
 	public int hashCode() {
+		
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
+		
 		return result;
 	}
-
+     
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) {  
 		if (this == obj)
 			return true;
 		if (obj == null)
