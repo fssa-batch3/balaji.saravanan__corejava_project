@@ -65,6 +65,7 @@ public class Task1 {
 		if (getClass() != obj.getClass())
 			return false;
 		Task1 other = (Task1) obj;
+		
 		return id == other.id;
 	}
 }

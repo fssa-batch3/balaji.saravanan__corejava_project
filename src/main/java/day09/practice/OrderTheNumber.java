@@ -23,6 +23,7 @@ public class OrderTheNumber {
 	public static ArrayList<Integer> AsssendingOrder(ArrayList<Integer> arr) {
 		
 		Collections.sort(arr);
+		Collections.reverse(arr);
 		
 		System.out.println(arr);
 		

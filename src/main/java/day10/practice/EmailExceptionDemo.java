@@ -45,7 +45,7 @@ class EmailValidator {
 
 		return true;
 
-	}
+	} 
 }
 
 public class EmailExceptionDemo {

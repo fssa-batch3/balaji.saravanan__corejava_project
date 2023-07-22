@@ -71,7 +71,7 @@ class UserValidator {
 				throw new UserAlreadyExistsException("User already added");
 			}
 
-		}
+		} 
 		arr.add(user);
 		System.out.println(arr);
 		System.out.println("User added");

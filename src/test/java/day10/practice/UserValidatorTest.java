@@ -15,7 +15,9 @@ class UserValidatorTest {
 
 		try {
 			UserValidator.register(null);
+			
 		} catch (UserAlreadyExistsException e) {
+			
 			Assertions.assertEquals("User Object Cannot be Null", e.getMessage());
 		}
 
