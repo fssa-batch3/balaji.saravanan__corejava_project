@@ -1,6 +1,7 @@
 package day07.practice;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Task1 {
 	int id;
@@ -44,28 +45,20 @@ public class Task1 {
 	public void setDeadline(LocalDate deadline) {
 		this.deadline = deadline;
 	}
-
-
 	@Override
 	public int hashCode() {
 		
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
+		return Objects.hash(name);	
 		
-		return result;
 	}
-     
+
+
 	@Override
-	public boolean equals(Object obj) {  
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
+	public boolean equals(Object obj) {
+		
 		Task1 other = (Task1) obj;
 		
-		return id == other.id;
+		return name == other.name;
 	}
+	
 }

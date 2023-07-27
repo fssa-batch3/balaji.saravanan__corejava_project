@@ -14,6 +14,7 @@ public class HashMapDemo {
 		for(int i=0; i<arrName.length; i++) {
 			
 			if(countMap.get(arrName[i])==null) {
+				
 				countMap.put(arrName[i], 1);
 				
 			}else {
@@ -22,7 +23,11 @@ public class HashMapDemo {
 				countMap.put(arrName[i], count);
 			}
 		}
-		System.out.println(countMap);
+		for(String v: countMap.keySet()) {
+			
+			System.out.println(v+ ": " + countMap.get(v));
+			
+		}
 	}
 
 }

@@ -20,6 +20,7 @@ public class ReusableTestConnection {
 		try {
 
 			String url = "jdbc:mysql://localhost:3306/fssa_hacker";
+			
 			connection = DriverManager.getConnection(url, "root", "root");
 
 		} catch (Exception e) {

@@ -16,6 +16,7 @@ public class TaskTest {
 	 
 		
 		for(Task value: tasksList) {
+			
 			System.out.println(value.taskName+" this is priority "+ value.priority); 
 		} 
 		

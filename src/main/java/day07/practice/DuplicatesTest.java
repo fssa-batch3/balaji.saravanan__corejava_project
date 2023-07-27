@@ -25,6 +25,7 @@ public class DuplicatesTest {
 	public static HashSet<Integer> CheckArrayList(ArrayList<Integer> value) {
  
 		HashSet<Integer> value2 = new HashSet<>(value);
+		
 		System.out.println(value2);
 
 		return value2;

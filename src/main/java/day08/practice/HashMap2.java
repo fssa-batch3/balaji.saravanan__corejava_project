@@ -20,6 +20,7 @@ public class HashMap2 {
 		HashMap<String, ArrayList<String>> countMap = new HashMap<String, ArrayList<String>>();
 
 		while (count >= 0) {
+			
 			String s = arrr[count];
 
 			String[] ar = s.split(",");
@@ -57,9 +58,13 @@ public class HashMap2 {
 
 		for (String n : countMap.keySet()) {
 			
-			System.out.println(countMap.values());
+			System.out.println(n + " : "+countMap.get(n));
 			
-			System.out.println(n + " : " + countMap.get(n));
+//			for(String v1: countMap.get(n)) {
+//				
+//				System.out.print(v1+", ");
+//			}
+//			System.out.println();
 		}
 		
 

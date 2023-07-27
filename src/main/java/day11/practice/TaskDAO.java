@@ -7,7 +7,8 @@ import java.sql.SQLException;
 
 
 class Task {
-	int id;
+	int id; 
+	
 	String name;
 	String status;
 
@@ -23,7 +24,9 @@ class TaskDAO {
 
 		Task task1 = new Task("java class", "incomplete");
 		try {
+			
 			createTask(task1);
+			
 			System.out.println("Task created successfully!");
 
 		} catch (DAOException ex) {
@@ -36,9 +39,9 @@ class TaskDAO {
 		}
 	}
 
-	public static void createTask(Task task) throws DAOException, SQLException {
+	public static boolean createTask(Task task) throws DAOException, SQLException {
 
-		String url = "jdbc:mysql://localhost:3306/fssa";
+		String url = "jdbc:mysql://localhost:3306/Task";
 		String userName = "root";
 		String password = "123456";
 
@@ -46,17 +49,19 @@ class TaskDAO {
 
 		try (Connection con = DriverManager.getConnection(url, userName, password);
 
-				PreparedStatement preparedStatement = con.prepareStatement(query)) {
+				PreparedStatement preparedStat = con.prepareStatement(query)) {
 
-			preparedStatement.setString(1, task.name);
-			preparedStatement.setString(2, task.status);
-			preparedStatement.executeUpdate();
+			preparedStat.setString(1, task.name);
+			preparedStat.setString(2, task.status);
+			
+			int row=preparedStat.executeUpdate();
+			
+			return row>0;
 
 		} catch (SQLException ex) {
 			
 			throw new DAOException("Error executing prepared statement", ex);
 		}
-		
-		System.out.println("Task completed");
+	
 	}
 }

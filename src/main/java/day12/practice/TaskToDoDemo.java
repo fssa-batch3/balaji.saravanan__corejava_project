@@ -31,6 +31,7 @@ class Task {
 public class TaskToDoDemo {
 
 	public static boolean taskValidate(Task task) {
+		
 		if (task.name == null || "".equals(task.name)) {
 			throw new IllegalArgumentException("Task name cannot null or empty");
 		}
@@ -45,7 +46,7 @@ public class TaskToDoDemo {
 		Connection connection = null;
 		try {
 
-			String url = "jdbc:mysql://localhost:3306/fssa";
+			String url = "jdbc:mysql://localhost:3306/task";
 
 			connection = DriverManager.getConnection(url, "root", "123456");
 
@@ -208,7 +209,7 @@ public class TaskToDoDemo {
 
 		for (Task element : taskslist) {
 
-			System.out.println("Id:" + element.id + ",Task Name" + element.name + " Task Status" + element.status);
+			System.out.println("Id : " + element.id + ",Task Name : " + element.name + " Task Status : " + element.status);
 		}
 
 	}
